@@ -1,5 +1,7 @@
 import React from 'react'
 import data from './data.json'
+import Artists from "./Artists"
+import Albums from "./Albums"
 
 console.log(data)
 
