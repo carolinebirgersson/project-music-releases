@@ -1,10 +1,16 @@
 import React from "react";
 
 const Albums = (props) => {
+  const {albums} = props
+
   return (
-    <div>
-      <p album={data.albums.items} />
-    </div>
+    <article className="album">
+      {albums.map(album => {
+        return (
+            <h2>{album.name}</h2>
+        )
+      })}
+    </article>
   )
 }
 export default Albums;
