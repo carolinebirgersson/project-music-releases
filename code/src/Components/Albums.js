@@ -1,7 +1,10 @@
 import React from "react";
 
-export const Albums = (props) => {
+const Albums = (props) => {
   return (
-
+    <div>
+      <p album={data.albums.items} />
+    </div>
   )
 }
+export default Albums;
