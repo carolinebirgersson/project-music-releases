@@ -8,3 +8,11 @@
   color: #a0a0a0;
 }
 
+a {
+  text-decoration: none;
+}
+
+.album-title:hover {
+  text-decoration: underline;
+}
+
