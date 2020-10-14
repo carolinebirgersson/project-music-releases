@@ -7,6 +7,9 @@ import {Albums} from "./Albums"
 import {Icons} from "./Icons"
 
 console.log(data)
+console.log("data info", data)
+console.log("data", data)
+
 
 export const App = () => {
   return (
@@ -15,6 +18,6 @@ export const App = () => {
       <Albums />
       <Artists />
       <Icons />
-
     </>
+  )
 };
