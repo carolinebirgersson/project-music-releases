@@ -1,7 +1,5 @@
 import React from "react";
 
-const Header = () => {
-    return <header>Music Releases</header>
+export const Header = () => {
+    return <h1>Music Releases</h1>
 };
-
-export default Header;

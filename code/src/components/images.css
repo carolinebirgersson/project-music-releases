@@ -1,0 +1,23 @@
+
+.images {
+    height: 400px;
+    width: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .icons {
+    fill: white;
+    display: flex;
+    flex-direction: row;
+    width: 40px;
+  }
+  
+  .heart {
+    width: 40px;
+  }
+  
+  .play, .dots {
+    width: 40px;
+  }
+  

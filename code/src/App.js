@@ -1,10 +1,7 @@
 import React from 'react'
 import data from './data.json'
-import {Header} from "./Header"
-import {AlbumsContainer} from "./AlbumsContainer"
-import {Artists} from "./Artists"
-import {Albums} from "./Albums"
-import {Icons} from "./Icons"
+import "./app.css"
+import {AlbumContainer} from "./components/AlbumContainer"
 
 console.log(data)
 console.log("data info", data)
@@ -12,12 +9,11 @@ console.log("data", data)
 
 
 export const App = () => {
+  // Sending data to AlbumContainer as props named "albums"
   return (
-    <>
-      <Header />
-      <Albums />
-      <Artists />
-      <Icons />
-    </>
+    <AlbumContainer albums={data.albums.items}/> 
   )
 };
+
+console.log(App)
+

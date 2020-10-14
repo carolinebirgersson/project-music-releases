@@ -1,39 +1,26 @@
 import React from "react";
 import "./albumcard.css"
-import { Play, Heart, Dots } from "./Icons"
-
+import { Images } from "./Images"
+import { Title } from "./Title"
 
 export const AlbumCard = props => {
-  
-  // const { title, artists, href } = props
-  // const { album } = props
-  const title = props.album.name
-  const artists = props.album.artists
-  const href = props.album.external_urls.spotify
+
   const img = props.album.images[0].url
-  
-  const cardStyle = { 
-    backgroundImage: `url(${img})`
-  }
+  const album = props.album
 
   return (
-    <article className="albumcard" style={cardStyle}>
-      <h1>{title}</h1>
-      {artists.map(artist => {
-        return <p key={artist.name}>{artist.name}</p>  
-      })}
-            <a href={href}>
-              <p>hej</p>
-              <Heart />
-            </a>
+    <article className="album-card">
+      {/* sending img url as props */}
+      <Images img={img} />
+      {/* sending albums as props */}
+      <div className="title">
+        <Title album={album} /> 
+      </div>
     </article>
   )
 }
 
 console.log(AlbumCard)
-
-
-________________________________________
 
 
 
