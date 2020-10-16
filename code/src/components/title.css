@@ -1,19 +1,20 @@
 .album-title {
   font-size: 14px;
-  color: white;
+  color: #fff;
+  margin-bottom: 10px;
 }
 
-.artist-title {
+.album-title:hover {
+  text-decoration: underline;
+}
+
+.artist-title,
+.artist-title a {
   font-size: 14px;
   color: #a0a0a0;
 }
 
-a {
-  text-decoration: none;
-  color: #a0a0a0;
-}
-
-.album-title:hover, .artist-title:hover {
+.artist-title:hover a {
   text-decoration: underline;
+  color: #fff;
 }
-

@@ -20,7 +20,5 @@ export const AlbumCard = props => {
   )
 }
 
-console.log(AlbumCard)
-
 
 

@@ -1,5 +1,11 @@
-import React from "react";
+import React from "react"
+import "./header.css"
 
 export const Header = () => {
-    return <h1>Music Releases</h1>
-};
+  return (
+    <div>
+      <p className="header">New albums &amp; singles</p>
+      <hr className="hr" />
+    </div>
+  )
+}

@@ -1,19 +1,22 @@
 import React from 'react'
 import data from './data.json'
 import "./app.css"
-import {AlbumContainer} from "./components/AlbumContainer"
+import {AlbumContainer} from "./components/MusicContainer"
+import { Header } from 'components/Header'
 
 console.log(data)
-console.log("data info", data)
-console.log("data", data)
-
 
 export const App = () => {
   // Sending data to AlbumContainer as props named "albums"
   return (
-    <AlbumContainer albums={data.albums.items}/> 
+    <>
+      <header>
+    <Header />
+      </header>
+    <main>
+      <AlbumContainer albums={data.albums.items}/> 
+    </main>
+    </>
   )
 };
-
-console.log(App)
 

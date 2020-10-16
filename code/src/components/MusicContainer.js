@@ -1,6 +1,6 @@
 import React from "react"
 import {AlbumCard} from "./AlbumCard"
-import "./albumcontainer.css"
+import "./musiccontainer.css"
 
 export const AlbumContainer = props => {
 
@@ -8,7 +8,7 @@ export const AlbumContainer = props => {
   // albums = items
   
   return (
-    <article className="album">
+    <article className="album-container">
       {albums.map(album => {
         return (
           <AlbumCard key={album.id} album={album}/>
