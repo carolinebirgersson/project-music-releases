@@ -19,7 +19,7 @@ export const Title = (props) => {
     return (
       <article>
         <a href={href}>
-          <h1 className="album-title">{title}</h1>
+          <h2 className="album-title">{title}</h2>
         </a>
         {artists.map((artist, index) => { 
           return (
