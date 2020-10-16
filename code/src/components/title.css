@@ -10,9 +10,10 @@
 
 a {
   text-decoration: none;
+  color: #a0a0a0;
 }
 
-.album-title:hover {
+.album-title:hover, .artist-title:hover {
   text-decoration: underline;
 }
 

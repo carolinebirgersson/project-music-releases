@@ -9,18 +9,19 @@ export const Images = (props) => {
   const img = props.img
   // const {img} = props
 
-  const cardStyle = { 
-    backgroundImage: `url(${img})`
-  }
+  // const cardStyle = { 
+  //  backgroundImage: `url(${img})`
+  // } 
 
   return (
-    <article className="images" style={cardStyle}>
+    <div className="image-container">
+      <img src={img} alt="image of album" className="image-cover"></img>
       <div className="icons">
-          <Heart className="heart" />
-          <Play className="play" />
-          <Dots className="dots" />
+          <span className="heart"><Heart  /></span>
+          <span className="play"><Play  /></span>
+          <span className="dots"><Dots  /></span>
       </div>
-    </article>
+    </div>
   )
 
 }

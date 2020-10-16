@@ -1,21 +1,52 @@
-.images {
-    height: 400px;
-    width: 400px;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+.image-container {
+  position: relative;
+}
+
+.image-cover {
+  width: 100%;
+}
   
-  .icons {
-    fill: white;
-    display: flex;
-    flex-direction: column;
-    width: 40px;
-  }
+.icons {
+  position: absolute;
+  fill: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: 0.15s ease-in-out;
+  opacity: 0;
+  fill: rgba(255, 255, 255, 0.7);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.icons:hover {
+  background: rgba(0, 0, 0, 0.6);
+  transition: 0.15s ease-in-out;
+  opacity: 1;
+}
   
-  .heart {
-    width: 40px;
-  }
+.play {
+  width: 24%;
+  height: 24%;
+  transition: 0.15s ease-in-out;
+}
   
-  .play, .dots {
-    width: 40px;
-  }
+.heart, .dots {
+  width: 12%;
+  height: 12%;
+  transition: 0.15s ease-in-out;
+}
+
+.play:hover {
+  transform: scale(1.2);
+  fill: rgba(255, 255, 255, 1);
+}
+
+.heart:hover, .dots:hover {
+  transition: 0.15s ease-in-out;
+  fill: rgba(255, 255, 255, 1);
+}
+
+
