@@ -3,9 +3,9 @@ import "./header.css"
 
 export const Header = () => {
   return (
-    <div>
+    <header>
       <h1 className="header">New albums &amp; singles</h1>
       <hr className="hr" />
-    </div>
+    </header>
   )
 }

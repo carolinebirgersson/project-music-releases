@@ -14,8 +14,6 @@ export const Title = (props) => {
     if (index === length - 2) return " & "
     return ", "
   }
-
-
     return (
       <article>
         <a href={href}>
@@ -31,8 +29,4 @@ export const Title = (props) => {
         })}
       </article>
     )
-
 }
-
-
-     

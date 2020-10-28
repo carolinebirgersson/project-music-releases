@@ -6,3 +6,7 @@
 .artist-title a{
   color: #a0a0a0;
 }
+
+.artist-title a:hover {
+  color: #fff;
+}
