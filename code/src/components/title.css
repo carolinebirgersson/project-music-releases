@@ -3,7 +3,7 @@
   margin-bottom: 10px;
 }
 
-.artist-title a{
+.artist-title, a{
   color: #a0a0a0;
 }
 
